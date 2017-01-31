@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Examples</title>
+</head>
+<body>
+    <script src="{% static 'example1.js' %}"></script>
+    <script src="{% static 'example2.js' %}"></script>
+
+    <h1>My first Js Example</h1>
+    <button onclick="myButtonClick()" type="button">Click me to Display current Date</button>
+    <p id="demo1"></p>
+    <br><hr>
+
+    <h1>What Can JavaScript Do?</h1>
+    <p id="demo2">JavaScript can change HTML content.</p>
+    <button type="button" onclick="updateContent()">Click Me!</button>
+    <br><br>
+    <p>JavaScript can change HTML attributes.</p>
+    <p>In this case JavaScript changes the src (source) attribute of an image.</p>
+    <button type="button" onclick="turnOnLight()">Turn On Light</button>
+    <img id="myImage" src="{% static 'images/pic_bulboff.gif' %}">
+    <button type="button" onclick="turnOffLight()"> Turn Off Light</button>
+    <br><br>
+    <p id="demo3">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="updateMyStyle()">Click Me</button>
+    <br><br>
+    <p id="demo4">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="hideMe()">Click to Hide</button>
+    <br><br>
+    <hr>
+
+
+</body>
+</html>
